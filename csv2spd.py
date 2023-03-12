@@ -4,7 +4,7 @@
 # CTCL 2023
 
 from itertools import cycle, islice
-import os, csv, sys, re
+import csv, sys, re
 
 def ljust(s1, s2, n):
     return f'{s1}{"".join(islice(cycle(s2), 0, n-len(s1)))}'
